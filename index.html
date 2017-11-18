@@ -7,6 +7,7 @@
   <body>
     <canvas id="canvas1" style="width: 200px; height: 200px; border: 2px solid black;"></canvas>
     <canvas id="canvas2" style="width: 200px; height: 200px; border: 2px solid black;"></canvas>
+    <canvas id="canvas3" style="width: 500px; height: 500px; border: 2px solid black;"></canvas>
     <script>
       c1 = document.getElementById('canvas1');
       c1_x = c1.getContext('2d');
@@ -24,7 +25,20 @@
       c2_x.lineTo(150, 140);
       c2_x.lineWidth = 20;
       c2_x.strokeStyle = 'red';
+      c2_x.lineCap = 'butt';
       c2_x.stroke();
+      
+      // Drawing a Circle
+      c3x = 250;
+      c3y = 250;
+      c3radius = 100;
+      c3startangle = 0;
+      c3endangle = 2 * Math.PI;
+      c3 = document.getElementById('canvas3');
+      c3_x = c3.getContext('2d'); 
+      c3_x.beginPath();
+      c3_x.arc(c3x, c3y, c3radius, c3startangle, c3endangle);
+      c3_x.stroke();
     </script>
 
   </body>
