@@ -19,9 +19,11 @@
       c2 = document.getElementById('canvas2');
       c2_x = c2.getContext('2d');
       c2_x.beginPath();
-      c2_x.moveTo(150, 0);
+      c2_x.moveTo(20, 20);
       //c2_x.moveTo(left, top);
-      c2_x.lineTo(150, 150);
+      c2_x.lineTo(150, 140);
+      c2_x.lineWidth = 20;
+      c2_x.strokeStyle = 'red';
       c2_x.stroke();
     </script>
 
