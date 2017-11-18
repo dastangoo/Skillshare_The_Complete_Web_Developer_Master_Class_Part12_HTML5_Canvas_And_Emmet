@@ -9,6 +9,7 @@
     <canvas id="canvas2" style="width: 200px; height: 200px; border: 2px solid black;"></canvas>
     <canvas id="canvas3" style="width: 500px; height: 500px; border: 2px solid black;"></canvas>
     <canvas id="canvas4" style="width: 450px; height: 450px; border: 2px solid black;"></canvas>
+    <canvas id="canvas5" style="width: 450px; height: 450px; border: 2px solid black;"></canvas>
     <script>
       c1 = document.getElementById('canvas1');
       c1_x = c1.getContext('2d');
@@ -42,17 +43,34 @@
       c3_x.stroke();
       
       // Creating a Quadratic Cirlce
-      c4controlpointx = 150;
-      c4controlpointy = 150;
+      c4controlpointx = 250;
+      c4controlpointy = 50;
       c4endingpointx = 350;
-      c4endingpointy = 150;
+      c4endingpointy = 250;
       
       c4 = document.getElementById('canvas4');
       c4_x = c4.getContext('2d');
+      
       c4_x.beginPath();
       c4_x.moveTo(100, 250);
       c4_x.quadraticCurveTo(c4controlpointx, c4controlpointy, c4endingpointx, c4endingpointy);
       c4_x.stroke();
+      
+      // Creating Bezier Curve
+      c5controlpoint1x = 150;
+      c5controlpoint1y = 50;
+      c5controlpoint2x = 300;
+      c5controlpoint2y = 50;
+      c5endingpointx = 400;
+      c5endingpointy = 350;
+      
+      c5 = document.getElementById('canvas5');
+      c5_x = c5.getContext('2d');
+      c5_x.beginPath();
+      c5_x.moveTo(0, 350);
+      c5_x.bezierCurveTo(c5controlpoint1x, c5controlpoint1y, c5controlpoint2x, c5controlpoint2y, c5endingpointx, c5endingpointy);
+      c5_x.stroke();
+      
     </script>
 
   </body>
