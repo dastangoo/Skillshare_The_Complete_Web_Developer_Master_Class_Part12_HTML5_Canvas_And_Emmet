@@ -1,0 +1,18 @@
+/*!*/
+/*!important*/
+/*bg*/
+background: #000;
+/*bgi*/
+background-image: url();
+/*bgc*/
+background-color: #fff;
+/*bg+*/
+background: #fff url() 0 0 no-repeat;
+/*cl*/
+clear: both;
+/*cll*/
+clear: left;
+/*clr*/
+clear: right;
+/*h*/
+height: ;
